@@ -1,0 +1,41 @@
+
+Task 
+-------
+1. Implement UI for Training Parameter  in Factsheet Page.
+2. Implement Model Section in Factsheet Page .
+3. Implement Ai Migration Page  in AiGovernace.
+4. Worked on Error Handling both for Ui Side and Api Side(bff layer) for External Model Page , Ai Use Case Page ,
+    General Setting Page, Report, Inventory Page in AiGovernace.
+5. Fixes Security Issue Raised By Pentest Team,
+6. Implement End to End All Accessebility Related Task For All almost 690 Accessebility issue in all  the pages handle by us .
+7. Implement CpdAssistMe Feature for CPD and Cloud. 
+8. Fixes All the defect related to Ui, design,Security and WebAccessbility .
+9. Continuous engaging and participating  in the Ai Governance Channel to support the client and customer.
+10. Continueus Giving Support to our team mate who ever asking for help.
+11. Completed all learning assignment on timely and pricisaly
+12. Fixes All defect assign to me on time and pricisely
+
+
+Activities
+----------
+1. Took a session on Web Accessebility. Where we discussed how to write  proper code which make our webpage ARIA (Accessible Rich Internet Applications).
+2. Created a well Organized Document Related to Accessebility Feature . which will use by other team member to fixes the accessibility Defect.
+
+Bussiness OutCome 
+-------------------
+1. Impleted End to End Feature of Web  Accessibility for all AiGovernace page . 
+     1. Which is helpfull to access the page for physical deformities, cognitive impairments, and ordinary people.
+     2. Accessible websites ensure you reach more social groups, growing your customer base in the long term. Especially with inaccessible websites missing out on 15-20% of potential clients, an accessible site broadens your market penetration.
+     3. Helps develop an innovative business mindset
+     4. Improves Our  brand reputation
+     5. Helps to  reach a broader audience
+
+2. Cpd assistMe Feature give on page support for the Bussiness client and customer which will help to easily understand the work flow of Product.
+3. Worked on Security Issue to  Make Our WebPage More Secure
+
+
+Skill Learn
+--------------
+1. Learn Basic Java , Redux ToolKit Query ,Basic Docker, React
+
+

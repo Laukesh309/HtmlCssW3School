@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+            .container{
+                width: 100%;
+                overflow: auto;
+                .leftPanel{
+                    width: 31%;
+                    background-color: #ccc;
+                    float: left;
+                    height: 600px;
+                    overflow: hidden;
+                    border: 1px solid red;
+                    h3{
+                        padding: 16px 18px ;
+                    }
+                    .input{
+                        padding: 16px 18px ;
+                        input{
+                        font-size: 17px;
+                        padding: 5px;
+                        border: none;
+                        text-decoration: none;
+                    }
+                    }
+                    
+                    ul{
+                        padding: 0;
+                    }
+                    ul li{
+                        list-style: none;
+                        width: 100%;
+                        padding: 16px 18px;
+                    }
+                    ul li a{
+                        text-decoration: none;
+                        color: black;
+                        width: 100%;
+                        text-align: left;
+                        cursor: pointer;
+                        font-size: 17px;
+                    }
+                   
+                }
+                .rightPanel{
+                        float: left;
+                        width: 65%;
+                        height: 600px;
+                        background-color: #ccc;
+                        overflow: hidden;
+                        border: 1px solid forestgreen;
+                        border-left: none;
+                        padding-left: 16px;
+                        font-size: 17px;
+                    }
+            }
+        </style>
+       <div class="container">
+         <div class="leftPanel">
+            <h3>Menu</h3>
+            <div class="input">
+                <input type="text" onkeyup="myFunction()" placeholder="search" id="mySearch">
+            </div>
+            
+            <ul id ="myMenu">
+                <li><a href="#">Html</a></li>
+                <li><a href="#">Css</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Php</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Jquery</a></li>
+                <li><a href="#">Sql</a></li>
+                <li><a href="#">BootStrap</a></li>
+            </ul>
+         </div>
+         <div class="rightPanel">
+            <h3>Page Contant</h3>
+            <p>Start to type for a specific category/link inside the search bar to "filter" the search options.
+
+                Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+                
+                Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..
+                
+                Some text..</p>
+         </div>
+       </div>
+
+       <script>
+          function myFunction(){
+            let inputValue = document.getElementById("mySearch")
+            let filterValue = inputValue.value.toUpperCase();
+            let ul = document.getElementById('myMenu')
+            let li = ul.getElementsByTagName('li')
+            for(let i=0;i<li.length;i++){
+                let a = li[i].getElementsByTagName('a')[0]
+                if(a.innerHTML.toUpperCase().includes(filterValue)){
+                    li[i].style.display=""
+                }else{
+                    li[i].style.display='none'
+                }
+            }
+            
+          }
+       </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

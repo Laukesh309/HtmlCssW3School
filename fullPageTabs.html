@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <style>
+        .container{
+            .tabLinks{
+                float: left;
+                width: 25%;
+                background-color: #555;
+                font-size: 17px;
+                color: white;
+                padding: 14px 16px;
+                border: none;
+                outline: none;
+            }
+            .tabLinks:hover{
+                background-color: #777;
+            }
+            .content{
+                padding:100px 20px;
+                color: white;
+                height:100%;
+                display: none;
+            }
+        }
+       </style>
+        <div class="container">
+                <button class="tabLinks" onclick="clickEvent(event,'home','red')" id="default">Home</button>
+                <button class="tabLinks" onclick="clickEvent(event,'news','green')">News</button>
+                <button class="tabLinks" onclick="clickEvent(event,'contact','blue')">Contacts</button>
+                <button class="tabLinks" onclick="clickEvent(event,'about','orange')">About</button>
+                <div  id ='home' class="content">
+                    <h3>Home</h3>
+                    <p>Home is where the heart is...</p>
+                </div>
+                <div id="news" class="content">
+                    <h3>News</h3>
+                    <p>Some news this fine day!</p>
+                </div>
+                <div id="contact" class="content">
+                    <h3>Contact</h3>
+                    <p>Get in touch, or swing by for a cup of coffee</p>
+                </div>
+                <div id="about" class="content">
+                    <h3>Contact</h3>
+                    <p>Get in touch, or swing by for a cup of coffee</p>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            function clickEvent(event,id,color){
+                console.log("this is an active element",id)
+                let butarr = document.getElementsByClassName("tabLinks");
+                let content = document.getElementsByClassName('content')
+                for(let i=0;i<butarr.length;i++){
+                    butarr[i].style.backgroundColor="";
+                    content[i].style.display="none"
+                }
+                event.currentTarget.style.backgroundColor=color;
+                document.getElementById(id).style.display="block"
+                 document.getElementById(id).style.backgroundColor=color;
+            }
+         document.getElementById("default").click();
+        </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

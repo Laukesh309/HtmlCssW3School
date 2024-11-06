@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <style>
+            .container{
+                .nav{
+                    background-color: #444;
+                    a{
+                        display: inline-block;
+                        color: white;
+                        padding: 14px 16px;
+                        font-size: 17px;
+                        text-decoration: none;
+                    }
+                    .dropdown{
+                        display: inline-block;
+                        position: relative;
+                        button{
+                            border: none;
+                            font-size: 17px;
+                            padding: 14px 16px;
+                            background-color: inherit;
+                            color: white;
+                        }
+                        .dropdown-content{
+                            display: none;
+                            position: absolute;
+                            min-width: 120px;
+                        }
+                    }
+                    .dropdown:hover{
+                        .dropdown-content{
+                            display: block;
+                            background-color: #444;
+                            color: white;
+                        }
+                        a:hover{
+                            background-color: #cccc;
+                            display: block;
+                        }
+                    }
+                }
+
+            }
+        </style>
+     <div class="container">
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <div class="dropdown">
+                <button>
+                    Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Dropdown Menu inside a Navigation Bar</h3>
+            <p>Hover over the "Dropdown" link to see the dropdown menu</p>
+        </div>
+     </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

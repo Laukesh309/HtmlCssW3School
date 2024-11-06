@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            /* body{
+                background-color: rgba(0,0,0,0.4);
+            } */
+            .container{
+                 .login{
+                    font-size: 17px;
+                    padding: 14px 16px;
+                    background-color: #04AA6D;
+                    border: none;
+                    color:white;
+                    cursor: pointer;
+                    outline: none;
+                 }
+               
+            }
+            .modal{
+                    width: 80%;
+                    margin: auto;
+                    position: relative;
+                    border:1px solid #888;
+                    top: 0px;
+                    margin-top: 60px;
+                    margin: auto;
+                    background-color: #fefefe;
+                    display: none;
+                    figure{
+                        width: 175px;
+                        height: 175px;
+                        margin: auto;
+                        padding: 30px 30px;
+                        img{
+                          
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            background-color: red;
+                        }
+                        .close{
+                            position: absolute;
+                            right: 0px;
+                            top: 0px;
+                        }
+                    }
+                    form{
+                        padding: 20px 20px;
+                        label{
+                            display: block;
+                            width: 100%;
+                            margin-bottom: 10px;
+                            font-size: 17px;
+                        }
+                        input{
+                            display: block;
+                            width: 100%;
+                            padding: 14px 16px;
+                            margin-bottom: 12px;
+                            border: 1px solid #ccc;
+                        }
+                        .loginButton{
+                            font-size: 17px;
+                            background-color: #04AA6D;
+                            border: none;
+                            width: 100%;
+                            padding: 14px 16px;
+                            color: white;
+                            margin-bottom: 20px;
+                        }
+                        .checkbox{
+                            font-size: 20px;
+                        .checkInput{
+                                display: inline-block;
+                                margin: 0px;
+                                width: max-content;
+                                margin-right: 4px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                 }
+                 .footer{
+                    background-color:#ccc;
+                    display: flex;
+                    justify-content: space-between;
+                    padding:28px 20px;
+                    align-items: center;
+                    button{
+                        display: inline-block;
+                        border: none;
+                        background-color: red;
+                        color: white;
+                        padding: 14px 16px;
+                    }
+                 }
+                
+        </style>
+        <div class="container">
+            <h3>Modal Login Form</h3>
+            <button class="login" onclick="clickLogin()">Login</button>
+        </div>
+        <div class="modal" id="modelId">
+            <figure>
+                <img src="" alt="">
+                <button class="close" onclick="onClose()">&times;</button>
+            </figure>
+            <form action="">
+            <label for="userName">UserName</label>
+            <input type="text" placeholder="Enter Your Name"></input>
+            <label for="password">Password</label>
+            <input type="text" placeholder="Enter Your Password">
+            <button class="loginButton">Login</button>
+            <label class="checkbox">
+                <input type="checkbox" class="checkInput"></input>Remember Me</label>
+            </label>
+            
+        </form>
+            <Footer class="footer">
+                <button>cancel</button>
+                <span>Forgot<a href="#">Passwrord</a></span>
+            </Footer>
+        </div>
+        <script>
+           
+           let element = document.getElementById("modelId")
+            function clickLogin(event){
+                // let body = document.getElementsByTagName("body")
+                // console.log(body)
+                element.style.display="block"
+                document.body.style.background = "rgba(0,0,0,0.4)"
+
+            }
+            function onClose(event){
+                element.style.display="none"
+                document.body.style.background ="none"
+            }
+        </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

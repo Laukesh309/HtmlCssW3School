@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .container{
+                .socialcontainer{
+                    background-color: #f2f2f2;
+                    padding: 20px 30px 0px 30px;
+                    width: 80%;
+                    margin: auto;
+                    overflow: auto;
+                    text-align: center;
+                    .logincontainer{
+                        display: flex;
+                        .sociallogin{
+                            width: 50%;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            a{
+                                display: block;
+                                color:white;
+                                text-decoration: none;
+                                padding: 14px;
+                                margin-bottom: 12px;
+                                width: 60%;
+                            }
+                            .facebook{
+                                background-color: #3B5998;
+                            }
+                            .twitter{
+                                background-color:#55ACEE;
+                            }
+                            .google{
+                               background-color: #dd4b39
+                            }
+                        }
+                        .userlogin{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 50%;
+                            input{
+                                padding: 14px;
+                                border: none;
+                                margin-bottom: 12px;
+                                font-size: 16px;
+                                display: block;
+                            }
+                            button{
+                                padding:14px;
+                                background-color: #04AA6D;
+                                border: none;
+                                font-size: 16px;
+                                color: white;
+                                display: block;
+                            }
+                        }
+                    }
+                    .btn{
+                        background-color: #666;
+                        float:left;
+                        color: white;
+                        padding: 14px 16px;
+                        width: 50%;
+                        border-right: none;
+                        border-left: none;
+
+                    }
+                }
+            }
+        </style>
+      
+        <div class="container">
+            <h3>Responsive Social Login Form</h3>
+            <p>Resize the browser window to see the responsive effect. When the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other.</p>
+            <form class="socialcontainer">
+                <h3>Login With Social Media or Manually</h3>
+                <div class="logincontainer">
+                    <div class="sociallogin">
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i>Login with Facebook</a>
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i>Login with Twitter</a>
+                        <a href="#" class="google"><i class="fa fa-google"></i>Login with Google+</a>
+                    </div>
+                    <div class="userlogin">
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Password">
+                        <button>Login</button>
+                    </div>
+                </div>       
+                <button class="btn">SignUp</button>
+                <button class="btn">Forgotpassword?</button>
+            </form>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

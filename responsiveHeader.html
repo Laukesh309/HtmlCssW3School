@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+            .nav{
+                background-color: #f1f1f1;
+                padding: 14px 16px;
+                overflow: auto;
+                h3{
+                    float: left;
+                    margin: 0px;
+                    padding: 14px 16px;
+                }
+                .navLink{
+                    float: right;
+                    a{
+                        float: left;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        font-size: 17px;
+                        color: black;
+                        border: 5px;
+                       
+                    }
+                    .active{
+                        background-color: dodgerblue;
+                        color: white;
+                       
+                    }
+                }
+            }
+            @media screen and (max-width: 500px){
+                .nav{
+                    h3{
+                        float: none;
+                    }
+                    .navLink{
+                        float: none;
+                        a{
+                            float: none;
+                            display: block;
+                            width: 100%;
+                        }
+                        a:hover{
+                            background-color: #cccc;
+                            color: black;
+                        }
+                    }
+                }
+
+            }
+        </style>
+       <div class="nav">
+           <h3>CompanyLogo</h3>
+           <div class="navLink">
+            <a href="#" class="active">News</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+           </div>
+       </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

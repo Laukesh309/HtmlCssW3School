@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <style>
+            button{
+                background-color: #2196F3;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                outline: none;
+            }
+            .dropdown{
+                display: inline-block;
+                position: absolute;
+                .content{
+                    display: none;
+                }
+            }
+            .dropdown:hover{
+                .content{
+                    display: block;
+                    background-color: #ccc;
+                    a{
+                        display: block;
+                        width: 160px;
+                        color: black;
+                        font-size: 17px;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        </style>
+        
+        <h3>Split Button Dropdowns</h3>
+        <p>Move the mouse over the arrow icon to open the dropdown menu</p>
+        <button class="btn">Button</button>
+        <div class="dropdown">
+            <button><i class="fa fa-caret-down icon"></i></button>
+            <div class="content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 1</a>
+                <a href="#">Link 1</a>
+            </div>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

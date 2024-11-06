@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .main{
+                button{
+                    background-color: #04AA6D;
+                    border: none;
+                    font-size: 17px;
+                    padding: 14px 16px;
+                }
+            }
+            form{
+                position: fixed;
+                z-index: 1;
+                background-color: rgba(0,0,0,0.4);
+                top: 0px;
+                padding-top: 60px;
+                left: 0px;
+                height: 100%;
+                width: 100%;
+
+                .model{
+                display: block;
+                margin: 5% auto 15% auto;
+                background-color: #fefefe;
+                width: 60%;
+                padding: 30px;
+                .profile{
+                    width: 100%;
+                    position: relative;
+                    text-align: center;
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        background-color: red;
+                    }   
+                    .close{
+                        position:absolute;
+                        right: 0px;
+                        top: 0px;
+                    }  
+                }
+                .user{
+                    label{
+                    display: block;
+                    width: 100%;
+                    font-size: 17px;
+                    padding: 14px 16px;
+                }
+                input{
+                    display: block;
+                    width: 100%;
+                    font-size: 17px;
+                    padding: 14px 16px;
+                    margin-bottom: 10px;
+                }
+                button{
+                    background-color: #04AA6D;
+                    border: none;
+                    width: 100%;
+                    padding: 14px 16px;
+                }
+                .checkButton{
+                    display: inline-block;
+                    input{
+                        width: max-content;
+                        display: inline-block;
+                    }
+                }
+                }
+                .footer{
+                background-color: #ccc;
+                font-size: 22px;
+                padding: 14px 16px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                button{
+                  padding: 14px 16px;
+                  background-color: red;
+                  border: none;
+                  color:white
+                }
+            }
+            }
+            }
+            
+        </style>
+        
+    <div class="main">
+        <h3>Modal Login Form</h3>
+        <button>Login</button>
+    </div>
+    <form action="">
+        <div class="model">
+            <div class="profile">
+                <img src="" alt="">
+                <button class="close">&times</button>
+            </div>
+            <div class="user">
+                <label for="username">UserName</label>
+                <input type="text" placeholder="Enter UserName"/>
+                <label for="password">Password</label>
+                <input type="text" placeholder="Enter Password">
+                <button>Login</button>
+                <label class="checkButton">
+                    <input type="checkbox" checked/>Remember me
+                </label>
+            </div>
+            <footer class="footer">
+                <button>Cancel</button>
+                <span>
+                    forgot <a href="#">password?</a>
+                </span>
+            </footer>
+        </div>  
+    </form>
+       
+        
+        <script src="" async defer></script>
+    </body>
+</html>

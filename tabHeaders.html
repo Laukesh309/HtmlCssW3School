@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <style>
+            body {font-family: "Lato", sans-serif;}
+            .container{
+                .tabLinks{
+                   outline: none;
+                   border: none;
+                   font-size: 17px;
+                   padding: 18px 10px;
+                   width: 25%;
+                   text-align: center;
+                   cursor: pointer;
+                   background-color: #555;
+                   color: white;
+                   float: left;
+                }
+                .tabLinks:hover{
+                    background-color: #777;
+                }
+                .tabContent{
+                    color: white;
+                    padding: 50px;
+                    text-align: center;
+                    display: none;
+                }
+
+            #london{background-color: red;}
+            #paris{background-color: green;}
+            #tokyo{background-color: blue;}
+            #oslo{background-color: orange;}
+            }
+           
+        </style>
+        <div class="container">
+            <div id="london" class="tabContent">
+                <h3>London</h3>
+                <p>London is the capital of England</p>
+            </div>
+            <div  id="paris"class="tabContent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France</p>
+            </div>
+            <div id="tokyo" class="tabContent">
+                <h3>Tokyo</h3>
+                <p>tokyo is the capital of France</p>
+            </div>
+            <div id="oslo" class="tabContent">
+                <h3>Oslo</h3>
+                <p>Oslo is the capital of Norway</p>
+            </div>
+            <div class="footer">
+                <button class="tabLinks"  onclick="callCountry(event,'london','red')">London</button>
+                <button class="tabLinks" onclick="callCountry(event,'paris','green')">Paris</button>
+                <button class="tabLinks" onclick="callCountry(event,'tokyo','blue')">Tokyo</button>
+                <button class="tabLinks" onclick="callCountry(event,'oslo','orange')">Oslo</button>
+            </div>
+        </div>
+        <script>
+            function callCountry(event,id,color){
+                let tabContentArray = document.getElementsByClassName("tabContent")
+                let navArray = document.getElementsByClassName("tabLinks");
+                for(let i=0;i<navArray.length;i++){
+                      if(tabContentArray[i].id==id){
+                        tabContentArray[i].style.display="block"
+                        tabContentArray[i].style.backgroundcolor=color;
+                      }else{
+                        tabContentArray[i].style.display="none"
+                      }
+                      navArray[i].style.backgroundColor=""
+                }
+                event.currentTarget.style.backgroundColor=color
+
+            }
+        </script>
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+            *{box-sizing: border-box;}
+            .container{
+                background-color: #f1f1f1;
+                padding: 20px;
+               .inputContainer{
+                display: flex;
+                margin-bottom: 15px;
+                input{
+                    width: 100%;
+                    border: none;
+                }
+                label{
+                    min-width: 300px;
+                    padding: 10px;
+                }
+                select{
+                    width: 100%;
+                    border: none;
+                }
+                textarea{
+                    height: 300px;
+                    width: 100%;
+                }
+               }
+               footer{
+                text-align: end;
+                .subbtn{
+                    padding: 15px;
+                    background-color: #04AA6D;
+                    border: none;
+                    color: white;
+                }
+               }
+            }
+        </style>
+        <div class="container">
+            <div class="inputContainer">
+                <label for="name">FirstName</label>
+                <input type="text" placeholder="Your Name" id="name">
+            </div>
+            <div class="inputContainer">
+                <label for="lastname">FirstName</label>
+                <input type="text" placeholder="Your last Name" id="lastname">
+            </div>
+            <div class="inputContainer">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="Australia">Australia</option>
+                    <option value="india">India</option>
+                </select>
+            </div>
+            <div class="inputContainer">
+                <label for="subject">Subject</label>
+                <textarea name="subject" id="subject"></textarea>
+            </div>
+            <footer>
+                <button class="subbtn">Submit</button>
+            </footer>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+     
+        <style>
+            .container{
+                button{
+                    padding: 14px;
+                    background-color: #ccc;
+                    border: none;
+                   font-size: 17px;
+                }
+            }
+            .overlay{
+                display: block;
+                background-color: black;
+                position: fixed;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                .close{
+                    position: absolute;
+                    right: 20px;
+                    color: white;
+                    font-size: 20px;
+                    top: 20px;
+                }
+                .search{
+                    color: white;
+                    position: relative;
+                    top:46%;
+                    width: 80%;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+
+        </style>
+        <div class="container">
+            <h3>Fullscreen Search</h3>
+            <p>Click on the button to open the search box</p>
+            <button onclick="handleOnClick()">Open Search Box</button>
+        </div>
+        <div class="overlay" id="Modal">
+              <span class="close">X</span>
+              <div class="search">
+                <input type="text" placeholder="search">
+                <span><i class="fa fa-search"></i></span>
+              </div>
+        </div>
+        <script>
+            function handleOnClick(){
+                let element = document.getElementById('modal')
+
+            }
+        </script>
+        <script src="" async defer></script>
+    </body>
+</html>

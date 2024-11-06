@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .container{
+                padding: 20px;
+                background-color: #f2f2f2;
+                border-radius: 5px;
+                input{
+                    display: block;
+                    width: 100%;
+                    padding:12px 20px;
+                    margin-bottom:16px;
+                    border: none;
+                }
+                label{
+                    display: block;
+                    margin-bottom: 5px;
+                    font-size: 16px;
+                    margin-bottom:8px;
+                }
+                select{
+                    display: block;
+                    width: 100%;
+                    padding:12px 20px;
+                    margin-bottom: 10px;
+                    margin-bottom:16px;
+                }
+                textarea{
+                    height: 200px;
+                    width: 100%;
+                    margin-bottom: 12px;
+                }
+                .submit{
+                    background-color: #04AA6D;
+                    color: white;
+                    padding: 14px 16px;
+                    border: none;
+                }
+            }
+        </style>
+        
+        <div class="container">
+           <label for="name">FirstName</label>
+           <input type="text" id="name" placeholder="Your Name"/>
+           <label for="email">LastName</label>
+           <input type="text" id="email" placeholder="your email"/>
+           <label for="country">Country</label>
+           <select name="" id="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+           </select>
+           <label for="discription">Subject</label>
+           <Textarea id="discription" placeholder="discription"></Textarea>
+           <button class="submit">Submit</button>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+            .main{
+                button{
+                    padding: 14px 16px;
+                    border: none;
+                    background-color: #04AA6D;
+                    color: white;
+                }
+            }
+            .container{
+                display: block;
+                position: fixed;
+                top: 0px;
+                height: 100%;
+                width: 100%;
+                background-color: #474e5d;
+                padding-top: 60px;
+                .modal{
+                    background-color: #fefefe;
+                    margin: 5px auto 15px auto;
+                    width: 60%;
+                    padding: 20px 30px;
+                    label{
+                        font-size: 17px;
+                        display: block;
+                        padding: 10px 0px;
+                    }
+                    input{
+                        font-size: 17px;
+                        width: 100%;
+                        padding: 12px 4px;
+                        margin-bottom: 10px;
+                    }
+                    .checked{
+                       input{
+                        width: max-content;
+                       }
+                    }
+                    .footer{
+                        background-color: #ccc;
+                        display: flex;
+                        button{
+                            border: none;
+                            float: left;
+                            font-size: 17px;
+                            padding: 14px 16px;
+                            flex-grow: 1;
+                          
+                        }
+                        .cancel{
+                            background-color: red;
+                        }
+                        .signUp{
+                            background-color: #04AA6D;
+                        }
+                    }
+                   
+                }
+                .close{
+                        position: absolute;
+                        right: 75px;
+                        top:25px;
+                        font-size: 25px;
+                        color: white;
+                        background-color: inherit;
+                        border: none;
+                        outline: none;
+                    }
+            }
+        </style>
+
+        <div class="main">
+            <h3>Modal SignUp Form</h3>
+            <button onclick="openPopup()">Sign Up</button>
+        </div>
+       
+        <div class="container" id="containerModel">
+            <button class="close" onclick="closeModel()">&times;</button>
+            <div class="modal">
+                <h3>Sign Up</h3>
+                <p>Pleasse fill in the form to create an account</p>
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter Email"/>
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="Enter Password"/>
+                <label for="repeatpassword">Repeat Password</label>
+                <input type="text" id="repeatpassword" placeholder="Repeat Password"/>
+                <label class="checked">
+                    <input type="checkbox" checked> Remember me
+                </label>
+                <p>By creating an account you agree to our <a href="#"> Terms & Privacy</a></p>
+                <div class="footer">
+                    <button class="cancel">Cancel</button>
+                    <button class="signUp">SignUp</button>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+             let element = document.getElementById("containerModel")
+            function openPopup(event){
+                  element.style.display="block"
+            }
+            function closeModel(event){
+                element.style.display="none"
+
+            }
+        </script>
+        <script src="" async defer></script>
+    </body>
+</html>

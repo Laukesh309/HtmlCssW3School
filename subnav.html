@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <style>
+            .container{
+                .nav{
+                    display: flex;
+                    background-color: #333;
+                    a{
+                    text-decoration: none;
+                    padding: 14px 16px;
+                    color: white;
+                    font-size: 17px;
+                    text-align: center;
+                    }
+                    .navigation{
+                        display: inline-block;
+                        button{
+                            border: none;
+                            padding: 14px 16px;
+                            background-color: inherit;
+                            color: white;
+                            font-size: 17px;
+                        }
+                        .navLink{
+                        display: none;
+                        position: absolute;
+                        left: 0px;
+                        background-color: red;
+                        width: 100%;
+                      }
+                    }
+                    .navigation:hover{
+                        .navLink{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        </style>
+       <div class="container">
+        <div class="nav">
+            <a href="#">Home</a>
+            <div class="navigation">
+                <button>About<i class="fa fa-caret-down"></i></button>
+                <div class="navLink">
+                    <a href="#">Company</a>
+                    <a href="#">Team</a>
+                    <a href="#">Career</a>
+                </div>
+            </div>
+            <div class="navigation">
+                <button>Services <i class="fa fa-caret-down"></i></button>
+                <div class="navLink">
+                    <a href="#">Bring</a>
+                    <a href="#">Deliver</a>
+                    <a href="#">Career</a>
+                </div>
+            </div>
+            <div class="navigation">
+                <button>Partners <i class="fa fa-caret-down"></i></button>
+                <div class="navLink">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <a href="#">Contact</a>
+        </div>
+       </div>
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>

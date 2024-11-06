@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <style>
+            .container{
+                .tab{
+                    background-color: #f1f1f1;
+                    border: 1px solid #ccc;
+                    overflow: auto;
+                    button{
+                        border: none;
+                        padding:14px 16px;
+                        outline: none;
+                        font-size: 17px;
+                        float: left;
+                        cursor: pointer;
+                        transition:0.3s;
+                    }
+                    button:hover{
+                        background-color: #ddd;
+                    }
+                  button.active{
+                    background-color: #ccc;
+                  }
+                }
+                .tabContent{
+                    border: 1px solid #ccc;
+                    padding: 6px 12px;
+                    border-top: none;
+                }
+
+            }
+        </style>
+        <div class="container">
+            <nav class="tab">
+                <button class="active" onclick="openCity(event,london)">London</button>
+                <button onclick="openCity(event,paris)">Paris</button>
+                <button onclick="openCity(event,tokyo)">Tokyo</button>
+            </nav>
+            <div  id ="paris" class="tabContent">
+                <h1>Paris</h1>
+                <p> Paris is the capital of France</p>
+            </div>
+            <div  id ="london" class="tabContent"></div>
+                <h1>London</h1>
+                <p> London is the capitoa city of England</p>
+            </div>
+            <div  id ="tokyo" class="tabContent"></div>
+                <h1>Tokyo</h1>
+                <p>Tokyo is the capital of Japan</p>
+            </div>
+           
+        </div>
+        <script>
+            function openCity(event,tabContent){
+                if(tabContent.style.display=='none'){
+                    tabContent.style.display==
+                }
+            }
+        </script>
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <style>
+            .container{
+                .dropdown{
+                    position: relative;
+                    display: inline-block;
+                    button{
+                      background-color: #3498DB;
+                      border: none;
+                      font-size: 17px;
+                      padding: 14px 16px;
+                      color: white;
+                    }
+                    .nav{
+                        display: none;
+                        position: absolute;
+                        a{
+                            display: block;
+                            background-color: #f1f1f1;
+                            font-size: 17px;
+                            padding: 14px 16px;
+                            min-width: 120px;
+                            text-decoration: none;
+                        }
+                    }
+                    .show{
+                        display: block;
+                    }
+                }
+            }
+        </style>
+      
+
+        <div class="container">
+            <h3>Dropdown</h3>
+            <p>A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list</p>
+            <div class="dropdown">
+                <button onclick="clickEvent()">Click Me</button>
+                <div class="nav" id="navId">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function clickEvent(){
+                document.getElementById("navId").classList.toggle("show")
+            }
+        </script>
+        <script src="" async defer></script>
+    </body>
+</html>

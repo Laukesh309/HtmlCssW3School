@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+      
+        <style>
+            body{
+                position: relative;
+            }
+            .container{
+                .nav{
+                    background-color: #04AA6D;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    a{
+                            display: inline-block;
+                            font-size: 24px;
+                            padding: 14px 16px;
+                            text-decoration: none;
+                            color: white;
+                           }
+                    .dropdown{
+                           min-width: 40px;
+                           div{
+                            width: 35px;
+                            height: 5px;
+                           margin: 6px 0px;
+                           background-color: black;
+                           }
+                        .navLink{
+                            /* display: none; */
+                            position: absolute;
+                            width: 100%;
+                            left: 0px;
+                            background-color:red;
+                            z-index: 111;
+                            height: 50px;
+                            a{
+                                display: inline-block;
+                                color:white;
+                            }
+                        }
+                    }
+                }
+            }
+        </style>
+
+        <div class="container">
+            <div class="nav">
+                <a href="#">Logo</a>
+                <div class="dropdown" onclick="clickFunction()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    <div class="navLink" id ="navLink1">
+                        <a href="#">News</a>
+                        <a href="#">Contact</a>
+                        <a href="#">About</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contant">
+                <h3>Vertical Mobile Navbar</h3>
+                <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+                 <p>Click on the hamburger menu (three bars) in the top right corner,to toggle the menu</p>
+            </div>
+        </div>
+        
+        <script>
+            function clickFunction(event){
+                let x = document.getElementById("navLink1")
+                if(x.style.display=="block"){
+                    x.style.display="none"
+                }else{
+                    x.style.display="block"
+                }
+
+            }
+        </script>
+        <script src="" async defer></script>
+    </body>
+</html>
